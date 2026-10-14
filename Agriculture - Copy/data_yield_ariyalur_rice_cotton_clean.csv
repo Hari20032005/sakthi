@@ -1,0 +1,37 @@
+State,District,Crop,Crop_Year,Season,Area,Production,Yield
+Tamil Nadu,ARIYALUR,Cotton(lint),2009,Whole Year,4074.0,11033.0,2.71
+Tamil Nadu,ARIYALUR,Cotton(lint),2010,Kharif,5684.0,9361.0,1.65
+Tamil Nadu,ARIYALUR,Cotton(lint),2011,Kharif,7661.0,36179.0,4.72
+Tamil Nadu,ARIYALUR,Cotton(lint),2011,Rabi,150.0,413.0,2.75
+Tamil Nadu,ARIYALUR,Cotton(lint),2012,Kharif,8634.0,15664.0,1.81
+Tamil Nadu,ARIYALUR,Cotton(lint),2013,Kharif,8815.0,29867.0,3.39
+Tamil Nadu,ARIYALUR,Cotton(lint),2013,Rabi,303.0,727.0,2.4
+Tamil Nadu,ARIYALUR,Cotton(lint),2014,Kharif,12841.0,42839.0,3.34
+Tamil Nadu,ARIYALUR,Cotton(lint),2014,Rabi,536.0,1829.0,3.41
+Tamil Nadu,ARIYALUR,Cotton(lint),2015,Kharif,8907.0,12732.0,1.43
+Tamil Nadu,ARIYALUR,Cotton(lint),2015,Rabi,282.0,836.0,2.96
+Tamil Nadu,ARIYALUR,Cotton(lint),2016,Kharif,9774.0,13686.0,1.4
+Tamil Nadu,ARIYALUR,Cotton(lint),2016,Rabi,6.0,10.0,1.67
+Tamil Nadu,ARIYALUR,Cotton(lint),2017,Kharif,10092.0,29.0,0.0
+Tamil Nadu,ARIYALUR,Cotton(lint),2017,Rabi,800.0,2.0,0.0
+Tamil Nadu,ARIYALUR,Cotton(lint),2018,Kharif,5500.0,11848.0,2.15
+Tamil Nadu,ARIYALUR,Cotton(lint),2018,Rabi,3834.0,9955.0,2.6
+Tamil Nadu,ARIYALUR,Cotton(lint),2019,Kharif,9164.0,17349.0,1.89
+Tamil Nadu,ARIYALUR,Cotton(lint),2019,Rabi,249.0,625.0,2.51
+Tamil Nadu,ARIYALUR,Rice,2009,Kharif,25978.0,80462.0,3.1
+Tamil Nadu,ARIYALUR,Rice,2010,Kharif,25211.0,97869.0,3.88
+Tamil Nadu,ARIYALUR,Rice,2011,Kharif,24097.0,97257.0,4.04
+Tamil Nadu,ARIYALUR,Rice,2012,Kharif,17523.0,36392.0,2.08
+Tamil Nadu,ARIYALUR,Rice,2013,Kharif,24437.0,131658.0,5.39
+Tamil Nadu,ARIYALUR,Rice,2014,Kharif,23108.0,116239.0,5.03
+Tamil Nadu,ARIYALUR,Rice,2015,Kharif,24408.0,124179.0,5.09
+Tamil Nadu,ARIYALUR,Rice,2016,Kharif,15398.0,44524.0,2.89
+Tamil Nadu,ARIYALUR,Rice,2017,Autumn,2556.0,9851.0,3.85
+Tamil Nadu,ARIYALUR,Rice,2017,Summer,480.0,2145.0,4.47
+Tamil Nadu,ARIYALUR,Rice,2017,Winter,19628.0,87227.0,4.44
+Tamil Nadu,ARIYALUR,Rice,2018,Autumn,2957.0,12673.0,4.29
+Tamil Nadu,ARIYALUR,Rice,2018,Summer,732.0,3064.0,4.19
+Tamil Nadu,ARIYALUR,Rice,2018,Winter,19103.0,73718.0,3.86
+Tamil Nadu,ARIYALUR,Rice,2019,Autumn,2448.0,8348.0,3.41
+Tamil Nadu,ARIYALUR,Rice,2019,Summer,397.0,1709.0,4.3
+Tamil Nadu,ARIYALUR,Rice,2019,Winter,20379.0,79599.0,3.91

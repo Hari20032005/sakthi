@@ -1,0 +1,8 @@
+Scenario,Predicted_Yield,Lower_Bound,Upper_Bound,Confidence
+Plant Rice (avg conditions),4.03,2.08,5.39,90%
+Plant Cotton (avg conditions),2.88,1.43,4.72,90%
+"Drought (-40% rainfall, ~276mm)",4.12,2.08,5.39,90%
+"Normal (avg rainfall, ~460mm)",4.03,2.08,5.39,90%
+"Above-average (+30% rainfall, ~598mm)",3.88,2.08,5.1,90%
+"Cotton, Kharif season",2.88,1.43,4.72,90%
+"Cotton, Rabi season",2.27,0.0,3.41,90%

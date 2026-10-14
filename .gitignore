@@ -1,0 +1,40 @@
+# Operating System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.~lock.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Node
+node_modules/
+dist/
+build/
+.npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Large dataset directory (>50MB-500MB per file, exceeds GitHub 100MB limit)
+price_data/
+**/price_data/
+*.csv.gz
+
+# Extraction caches
+review1_render/
+extracted_images/

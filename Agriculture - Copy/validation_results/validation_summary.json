@@ -1,0 +1,330 @@
+{
+  "ablations": {
+    "engine_full": {
+      "mean_bias": 0.012868530128789975,
+      "n": 360,
+      "point_mae": 1.2189736650574696
+    },
+    "no_correction": {
+      "mean_bias": -0.20311638888888955,
+      "n": 360,
+      "point_mae": 1.1398824999999995
+    },
+    "no_detrend_spatial": {
+      "mean_bias": -0.3759674605867205,
+      "n": 324,
+      "point_mae": 1.2753397250618836
+    },
+    "no_horizon_weighting": {
+      "mean_bias": -0.36341690443744085,
+      "n": 360,
+      "point_mae": 1.2697602287521075
+    },
+    "no_thermal_time": {
+      "mean_bias": -1.1051557504158076,
+      "n": 360,
+      "point_mae": 1.572368339142256
+    }
+  },
+  "by_regime": {
+    "cached_aged": {
+      "base": {
+        "calibration_error": 0.0444444444444444,
+        "coverage": 0.9444444444444444,
+        "mean_width": 5.051877777777777,
+        "point_mae": 1.152805555555555
+      },
+      "engine": {
+        "calibration_error": 0.07222222222222219,
+        "coverage": 0.9722222222222222,
+        "mean_width": 5.3341994071710355,
+        "point_mae": 1.1805245296843376
+      },
+      "guarantee_mix": {
+        "heuristic_inflated_pooled": 36
+      },
+      "overlay": {
+        "calibration_error": 0.07222222222222219,
+        "coverage": 0.9722222222222222,
+        "mean_width": 5.026430544230146,
+        "point_mae": 1.1472865466576223
+      }
+    },
+    "climatology_fallback": {
+      "base": {
+        "calibration_error": 0.016666666666666607,
+        "coverage": 0.9166666666666666,
+        "mean_width": 4.997883333333332,
+        "point_mae": 1.1290249999999997
+      },
+      "engine": {
+        "calibration_error": 0.0444444444444444,
+        "coverage": 0.9444444444444444,
+        "mean_width": 6.168361138634155,
+        "point_mae": 1.1315570835590987
+      },
+      "guarantee_mix": {
+        "heuristic_inflated_pooled": 36
+      },
+      "overlay": {
+        "calibration_error": 0.07222222222222219,
+        "coverage": 0.9722222222222222,
+        "mean_width": 4.972643121778214,
+        "point_mae": 1.1418089343202054
+      }
+    },
+    "conflict_vegetation_decline_weather_normal": {
+      "base": {
+        "calibration_error": 0.0444444444444444,
+        "coverage": 0.9444444444444444,
+        "mean_width": 5.051877777777777,
+        "point_mae": 1.152805555555555
+      },
+      "engine": {
+        "calibration_error": 0.03888888888888886,
+        "coverage": 0.8611111111111112,
+        "mean_width": 4.1689365355132635,
+        "point_mae": 1.2034942104562818
+      },
+      "guarantee_mix": {
+        "finite_sample_conformal": 36
+      },
+      "overlay": {
+        "calibration_error": 0.07222222222222219,
+        "coverage": 0.9722222222222222,
+        "mean_width": 5.024981833466018,
+        "point_mae": 1.146172212037711
+      }
+    },
+    "conflict_weather_stress_vegetation_normal": {
+      "base": {
+        "calibration_error": 0.07222222222222219,
+        "coverage": 0.9722222222222222,
+        "mean_width": 5.115188888888888,
+        "point_mae": 1.0688500000000003
+      },
+      "engine": {
+        "calibration_error": 0.09444444444444444,
+        "coverage": 0.8055555555555556,
+        "mean_width": 4.5310075830375105,
+        "point_mae": 1.5794736340404465
+      },
+      "guarantee_mix": {
+        "finite_sample_conformal": 36
+      },
+      "overlay": {
+        "calibration_error": 0.07222222222222219,
+        "coverage": 0.9722222222222222,
+        "mean_width": 4.997678128742076,
+        "point_mae": 1.1276554522089244
+      }
+    },
+    "forecast_long_horizon": {
+      "base": {
+        "calibration_error": 0.0444444444444444,
+        "coverage": 0.9444444444444444,
+        "mean_width": 5.051141666666665,
+        "point_mae": 1.1313111111111105
+      },
+      "engine": {
+        "calibration_error": 0.03888888888888886,
+        "coverage": 0.8611111111111112,
+        "mean_width": 4.364348527530914,
+        "point_mae": 1.192064544412846
+      },
+      "guarantee_mix": {
+        "finite_sample_conformal": 36
+      },
+      "overlay": {
+        "calibration_error": 0.0444444444444444,
+        "coverage": 0.9444444444444444,
+        "mean_width": 5.017938488266667,
+        "point_mae": 1.126282893847526
+      }
+    },
+    "forecast_short_horizon": {
+      "base": {
+        "calibration_error": 0.0444444444444444,
+        "coverage": 0.9444444444444444,
+        "mean_width": 5.051877777777777,
+        "point_mae": 1.152805555555555
+      },
+      "engine": {
+        "calibration_error": 0.03888888888888886,
+        "coverage": 0.8611111111111112,
+        "mean_width": 4.207404685341171,
+        "point_mae": 1.1805245296843376
+      },
+      "guarantee_mix": {
+        "finite_sample_conformal": 36
+      },
+      "overlay": {
+        "calibration_error": 0.07222222222222219,
+        "coverage": 0.9722222222222222,
+        "mean_width": 5.026430544230146,
+        "point_mae": 1.1472865466576223
+      }
+    },
+    "live_full": {
+      "base": {
+        "calibration_error": 0.0444444444444444,
+        "coverage": 0.9444444444444444,
+        "mean_width": 5.051877777777777,
+        "point_mae": 1.152805555555555
+      },
+      "engine": {
+        "calibration_error": 0.03888888888888886,
+        "coverage": 0.8611111111111112,
+        "mean_width": 4.310161699788421,
+        "point_mae": 1.1805245296843376
+      },
+      "guarantee_mix": {
+        "finite_sample_conformal": 36
+      },
+      "overlay": {
+        "calibration_error": 0.07222222222222219,
+        "coverage": 0.9722222222222222,
+        "mean_width": 5.026430544230146,
+        "point_mae": 1.1472865466576223
+      }
+    },
+    "low_valid_pixel": {
+      "base": {
+        "calibration_error": 0.0444444444444444,
+        "coverage": 0.9444444444444444,
+        "mean_width": 5.051877777777777,
+        "point_mae": 1.152805555555555
+      },
+      "engine": {
+        "calibration_error": 0.06666666666666665,
+        "coverage": 0.8333333333333334,
+        "mean_width": 3.90558863027612,
+        "point_mae": 1.1805245296843376
+      },
+      "guarantee_mix": {
+        "finite_sample_conformal": 36
+      },
+      "overlay": {
+        "calibration_error": 0.07222222222222219,
+        "coverage": 0.9722222222222222,
+        "mean_width": 5.026430544230146,
+        "point_mae": 1.1472865466576223
+      }
+    },
+    "no_vegetation": {
+      "base": {
+        "calibration_error": 0.0444444444444444,
+        "coverage": 0.9444444444444444,
+        "mean_width": 5.051877777777777,
+        "point_mae": 1.152805555555555
+      },
+      "engine": {
+        "calibration_error": 0.06666666666666665,
+        "coverage": 0.8333333333333334,
+        "mean_width": 4.0543334781081075,
+        "point_mae": 1.1805245296843376
+      },
+      "guarantee_mix": {
+        "finite_sample_conformal": 36
+      },
+      "overlay": {
+        "calibration_error": 0.07222222222222219,
+        "coverage": 0.9722222222222222,
+        "mean_width": 5.026430544230146,
+        "point_mae": 1.1472865466576223
+      }
+    },
+    "radius_disagreement": {
+      "base": {
+        "calibration_error": 0.0444444444444444,
+        "coverage": 0.9444444444444444,
+        "mean_width": 5.051877777777777,
+        "point_mae": 1.152805555555555
+      },
+      "engine": {
+        "calibration_error": 0.06666666666666665,
+        "coverage": 0.8333333333333334,
+        "mean_width": 3.917744813063365,
+        "point_mae": 1.1805245296843376
+      },
+      "guarantee_mix": {
+        "finite_sample_conformal": 36
+      },
+      "overlay": {
+        "calibration_error": 0.07222222222222219,
+        "coverage": 0.9722222222222222,
+        "mean_width": 5.026430544230146,
+        "point_mae": 1.1472865466576223
+      }
+    }
+  },
+  "conflict_detection": {
+    "accuracy": 0.8027777777777778,
+    "f1": 0.403361344537815,
+    "fn": 48,
+    "fp": 23,
+    "precision": 0.5106382978723404,
+    "recall": 0.3333333333333333,
+    "tn": 265,
+    "tp": 24
+  },
+  "correction_coefficients": {
+    "alpha": 0.01,
+    "bound_lower": -1.0,
+    "bound_upper": 0.950948,
+    "coefficients": {
+      "et0_pct": -0.02720717,
+      "heat_days": 0.00680662,
+      "rainfall_pct": -0.00209335,
+      "temp_max_c": -0.03038076
+    },
+    "fit_rmse": 0.433929,
+    "fitted_on": 35,
+    "method": "ridge on historical base-model relative residuals, bounded by the empirical residual distribution"
+  },
+  "n_predictions": 360,
+  "n_seasons": 36,
+  "nominal_coverage": 0.9,
+  "overall": {
+    "base": {
+      "calibration_error": 0.0444444444444444,
+      "coverage": 0.9444444444444444,
+      "mean_width": 5.052735833333332,
+      "point_mae": 1.1398824999999995
+    },
+    "engine": {
+      "calibration_error": 0.033333333333333326,
+      "coverage": 0.8666666666666667,
+      "mean_width": 4.496208649846406,
+      "point_mae": 1.2189736650574696
+    },
+    "overlay": {
+      "calibration_error": 0.06944444444444442,
+      "coverage": 0.9694444444444444,
+      "mean_width": 5.017182483763385,
+      "point_mae": 1.1425638772360098
+    }
+  },
+  "regimes": [
+    "live_full",
+    "cached_aged",
+    "climatology_fallback",
+    "forecast_short_horizon",
+    "forecast_long_horizon",
+    "no_vegetation",
+    "low_valid_pixel",
+    "radius_disagreement",
+    "conflict_weather_stress_vegetation_normal",
+    "conflict_vegetation_decline_weather_normal"
+  ],
+  "replay": {
+    "checked": 360,
+    "failures": [],
+    "rate": 1.0,
+    "reproduced": 360
+  },
+  "tamper": {
+    "intact_detected": true,
+    "tampered_detected_as_invalid": true
+  }
+}

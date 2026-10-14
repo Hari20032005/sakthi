@@ -1,0 +1,958 @@
+{
+  "actual_yield": 2.89,
+  "base_prediction": 3.9887,
+  "correction_model": {
+    "alpha": 0.01,
+    "bound_lower": -1.0,
+    "bound_upper": 0.947108,
+    "coefficients": {
+      "et0_pct": -0.02392464,
+      "heat_days": 0.00601736,
+      "rainfall_pct": -0.0021162,
+      "temp_max_c": -0.0312662
+    },
+    "fit_rmse": 0.433671,
+    "fitted_on": 36,
+    "method": "ridge on historical base-model relative residuals, bounded by the empirical residual distribution"
+  },
+  "engine_version": "1.0.0",
+  "ledger_entry": {
+    "anomaly_vector": {
+      "et0_pct": -4.744814451991948,
+      "heat_days": 23.38535467963164,
+      "rainfall_pct": -9.096073077634225,
+      "temp_max_c": 2.6694498532104376
+    },
+    "base_model_version": "rf-100-lofo-fixed",
+    "base_prediction": 3.988699999999995,
+    "calibration_selection": {
+      "alpha": 0.1,
+      "backoff_depth": 1,
+      "backoff_path": [
+        "Whistorical_fallback|Vhigh|Cconflict:6",
+        "Whistorical_fallback|Vhigh|C*:20"
+      ],
+      "guarantee_level": "heuristic_inflated_pooled",
+      "inflation_applied": 1.35,
+      "is_calibrated": false,
+      "n_residuals": 20,
+      "partition_label": "Whistorical_fallback|Vhigh|C*",
+      "quantile": 3.1094158230332685
+    },
+    "conflict": {
+      "bucket": "conflict",
+      "code": "WEATHER_STRESS_NDVI_NORMAL",
+      "detail": "weather record indicates water or heat stress but the vegetation index is at or above its thermal-time expectation",
+      "vegetation_flag": "normal",
+      "weather_flag": "stress"
+    },
+    "corrected_prediction": 4.746639904605463,
+    "correction_bounds": {
+      "lower": -1.0,
+      "upper": 0.9471081079903912
+    },
+    "correction_components": {
+      "et0_pct": 0.11351799321377237,
+      "heat_days": 0.14071820960898374,
+      "rainfall_pct": 0.01924913781548781,
+      "temp_max_c": -0.08346355293661953
+    },
+    "created_at": "2026-10-14T13:06:35+00:00",
+    "engine_version": "1.0.0",
+    "entry_hash": "d855f55cd9a428242ec6283804418eb619be869ec5e0c52bd089ae2634e5d3ed",
+    "forecast_weights": {
+      "1": 0.656069,
+      "2": 0.600217,
+      "3": 0.544365,
+      "4": 0.52897,
+      "5": 0.513575,
+      "6": 0.507339,
+      "7": 0.501104
+    },
+    "inference_id": "Rice|Kharif|2016|4333631712",
+    "input_values": {
+      "crop": "Rice",
+      "crop_year": 2016,
+      "forecast_daily": [
+        {
+          "date": "2016-08-24",
+          "et0": 4.9908,
+          "rain": 2.3615,
+          "tmax": 34.3154,
+          "tmin": 25.4538
+        },
+        {
+          "date": "2016-08-25",
+          "et0": 4.9908,
+          "rain": 2.3615,
+          "tmax": 34.3154,
+          "tmin": 25.4538
+        },
+        {
+          "date": "2016-08-26",
+          "et0": 4.9908,
+          "rain": 2.3615,
+          "tmax": 34.3154,
+          "tmin": 25.4538
+        },
+        {
+          "date": "2016-08-27",
+          "et0": 4.9908,
+          "rain": 2.3615,
+          "tmax": 34.3154,
+          "tmin": 25.4538
+        },
+        {
+          "date": "2016-08-28",
+          "et0": 4.9908,
+          "rain": 2.3615,
+          "tmax": 34.3154,
+          "tmin": 25.4538
+        },
+        {
+          "date": "2016-08-29",
+          "et0": 4.9908,
+          "rain": 2.3615,
+          "tmax": 34.3154,
+          "tmin": 25.4538
+        },
+        {
+          "date": "2016-08-30",
+          "et0": 4.9908,
+          "rain": 2.3615,
+          "tmax": 34.3154,
+          "tmin": 25.4538
+        }
+      ],
+      "ladder": [
+        {
+          "ndvi": 0.735315,
+          "radius_m": 90
+        },
+        {
+          "ndvi": 0.737392,
+          "radius_m": 180
+        },
+        {
+          "ndvi": 0.714907,
+          "radius_m": 360
+        },
+        {
+          "ndvi": 0.711943,
+          "radius_m": 720
+        },
+        {
+          "ndvi": 0.707224,
+          "radius_m": 1440
+        }
+      ],
+      "observed_daily": [
+        {
+          "date": "2016-06-01",
+          "et0": 6.3708,
+          "rain": 2.7154,
+          "tmax": 38.0231,
+          "tmin": 27.3385
+        },
+        {
+          "date": "2016-06-02",
+          "et0": 6.1085,
+          "rain": 3.3308,
+          "tmax": 37.5538,
+          "tmin": 27.2077
+        },
+        {
+          "date": "2016-06-03",
+          "et0": 5.8262,
+          "rain": 2.0077,
+          "tmax": 36.6615,
+          "tmin": 27.4538
+        },
+        {
+          "date": "2016-06-04",
+          "et0": 6.2846,
+          "rain": 2.2923,
+          "tmax": 37.6692,
+          "tmin": 27.1846
+        },
+        {
+          "date": "2016-06-05",
+          "et0": 6.2192,
+          "rain": 2.7846,
+          "tmax": 37.3538,
+          "tmin": 27.1308
+        },
+        {
+          "date": "2016-06-06",
+          "et0": 5.9031,
+          "rain": 5.1308,
+          "tmax": 36.7385,
+          "tmin": 26.9077
+        },
+        {
+          "date": "2016-06-07",
+          "et0": 5.8192,
+          "rain": 3.7077,
+          "tmax": 35.9,
+          "tmin": 26.7
+        },
+        {
+          "date": "2016-06-08",
+          "et0": 6.0315,
+          "rain": 2.0077,
+          "tmax": 36.1385,
+          "tmin": 26.8
+        },
+        {
+          "date": "2016-06-09",
+          "et0": 5.9985,
+          "rain": 0.8923,
+          "tmax": 35.8,
+          "tmin": 27.1923
+        },
+        {
+          "date": "2016-06-10",
+          "et0": 6.3431,
+          "rain": 1.2692,
+          "tmax": 36.2615,
+          "tmin": 27.0615
+        },
+        {
+          "date": "2016-06-11",
+          "et0": 6.2869,
+          "rain": 4.4308,
+          "tmax": 36.2615,
+          "tmin": 26.8538
+        },
+        {
+          "date": "2016-06-12",
+          "et0": 6.4508,
+          "rain": 1.0077,
+          "tmax": 36.1,
+          "tmin": 26.9923
+        },
+        {
+          "date": "2016-06-13",
+          "et0": 6.1338,
+          "rain": 1.9462,
+          "tmax": 36.4308,
+          "tmin": 26.9538
+        },
+        {
+          "date": "2016-06-14",
+          "et0": 6.0915,
+          "rain": 1.6462,
+          "tmax": 36.3769,
+          "tmin": 26.8923
+        },
+        {
+          "date": "2016-06-15",
+          "et0": 6.4823,
+          "rain": 1.2077,
+          "tmax": 36.9769,
+          "tmin": 26.9769
+        },
+        {
+          "date": "2016-06-16",
+          "et0": 6.4238,
+          "rain": 0.8538,
+          "tmax": 37.0231,
+          "tmin": 27.0846
+        },
+        {
+          "date": "2016-06-17",
+          "et0": 6.0638,
+          "rain": 1.5462,
+          "tmax": 36.4154,
+          "tmin": 27.0077
+        },
+        {
+          "date": "2016-06-18",
+          "et0": 5.7038,
+          "rain": 1.6923,
+          "tmax": 35.9385,
+          "tmin": 26.7231
+        },
+        {
+          "date": "2016-06-19",
+          "et0": 5.9815,
+          "rain": 2.0538,
+          "tmax": 36.1462,
+          "tmin": 26.4538
+        },
+        {
+          "date": "2016-06-20",
+          "et0": 6.2638,
+          "rain": 1.1154,
+          "tmax": 36.3923,
+          "tmin": 26.6538
+        },
+        {
+          "date": "2016-06-21",
+          "et0": 6.1069,
+          "rain": 2.5615,
+          "tmax": 35.9615,
+          "tmin": 26.3462
+        },
+        {
+          "date": "2016-06-22",
+          "et0": 6.1592,
+          "rain": 2.3385,
+          "tmax": 36.0154,
+          "tmin": 26.6462
+        },
+        {
+          "date": "2016-06-23",
+          "et0": 6.0854,
+          "rain": 2.5462,
+          "tmax": 35.8615,
+          "tmin": 26.4385
+        },
+        {
+          "date": "2016-06-24",
+          "et0": 5.9008,
+          "rain": 1.8538,
+          "tmax": 36.0385,
+          "tmin": 26.5615
+        },
+        {
+          "date": "2016-06-25",
+          "et0": 6.1854,
+          "rain": 0.6692,
+          "tmax": 36.3538,
+          "tmin": 26.9231
+        },
+        {
+          "date": "2016-06-26",
+          "et0": 5.8985,
+          "rain": 0.8462,
+          "tmax": 36.0692,
+          "tmin": 26.5846
+        },
+        {
+          "date": "2016-06-27",
+          "et0": 5.7577,
+          "rain": 1.0769,
+          "tmax": 35.8385,
+          "tmin": 26.8077
+        },
+        {
+          "date": "2016-06-28",
+          "et0": 5.8154,
+          "rain": 1.5615,
+          "tmax": 35.9231,
+          "tmin": 26.4308
+        },
+        {
+          "date": "2016-06-29",
+          "et0": 6.1431,
+          "rain": 1.7692,
+          "tmax": 36.5077,
+          "tmin": 26.6231
+        },
+        {
+          "date": "2016-06-30",
+          "et0": 6.0431,
+          "rain": 2.1846,
+          "tmax": 36.4154,
+          "tmin": 26.6308
+        },
+        {
+          "date": "2016-07-01",
+          "et0": 5.6369,
+          "rain": 3.8154,
+          "tmax": 35.8154,
+          "tmin": 26.3462
+        },
+        {
+          "date": "2016-07-02",
+          "et0": 6.0485,
+          "rain": 1.5769,
+          "tmax": 36.0077,
+          "tmin": 26.2385
+        },
+        {
+          "date": "2016-07-03",
+          "et0": 6.0523,
+          "rain": 0.9615,
+          "tmax": 35.8692,
+          "tmin": 26.5538
+        },
+        {
+          "date": "2016-07-04",
+          "et0": 5.8462,
+          "rain": 2.4615,
+          "tmax": 36.1462,
+          "tmin": 26.5
+        },
+        {
+          "date": "2016-07-05",
+          "et0": 5.9354,
+          "rain": 1.5615,
+          "tmax": 36.0308,
+          "tmin": 26.4077
+        },
+        {
+          "date": "2016-07-06",
+          "et0": 5.6908,
+          "rain": 3.4462,
+          "tmax": 35.5692,
+          "tmin": 26.0385
+        },
+        {
+          "date": "2016-07-07",
+          "et0": 5.8938,
+          "rain": 1.2385,
+          "tmax": 35.7,
+          "tmin": 26.1769
+        },
+        {
+          "date": "2016-07-08",
+          "et0": 5.9592,
+          "rain": 1.4231,
+          "tmax": 35.8692,
+          "tmin": 26.2923
+        },
+        {
+          "date": "2016-07-09",
+          "et0": 5.6308,
+          "rain": 2.2923,
+          "tmax": 35.2692,
+          "tmin": 26.5385
+        },
+        {
+          "date": "2016-07-10",
+          "et0": 5.7531,
+          "rain": 1.5077,
+          "tmax": 35.1692,
+          "tmin": 26.0769
+        },
+        {
+          "date": "2016-07-11",
+          "et0": 5.8546,
+          "rain": 1.4154,
+          "tmax": 35.8385,
+          "tmin": 26.1
+        },
+        {
+          "date": "2016-07-12",
+          "et0": 6.1254,
+          "rain": 0.4308,
+          "tmax": 36.3462,
+          "tmin": 26.2538
+        },
+        {
+          "date": "2016-07-13",
+          "et0": 5.9431,
+          "rain": 1.2,
+          "tmax": 36.1077,
+          "tmin": 26.5385
+        },
+        {
+          "date": "2016-07-14",
+          "et0": 5.6492,
+          "rain": 2.4692,
+          "tmax": 35.8462,
+          "tmin": 26.3538
+        },
+        {
+          "date": "2016-07-15",
+          "et0": 5.4692,
+          "rain": 2.1231,
+          "tmax": 35.4615,
+          "tmin": 26.2462
+        },
+        {
+          "date": "2016-07-16",
+          "et0": 5.5485,
+          "rain": 1.6077,
+          "tmax": 35.5,
+          "tmin": 26.3077
+        },
+        {
+          "date": "2016-07-17",
+          "et0": 5.6123,
+          "rain": 2.3615,
+          "tmax": 35.1154,
+          "tmin": 26.0615
+        },
+        {
+          "date": "2016-07-18",
+          "et0": 5.4131,
+          "rain": 3.2385,
+          "tmax": 35.2769,
+          "tmin": 25.8692
+        },
+        {
+          "date": "2016-07-19",
+          "et0": 5.1738,
+          "rain": 3.5769,
+          "tmax": 34.4154,
+          "tmin": 25.6923
+        },
+        {
+          "date": "2016-07-20",
+          "et0": 5.3954,
+          "rain": 2.6154,
+          "tmax": 34.4154,
+          "tmin": 25.9308
+        },
+        {
+          "date": "2016-07-21",
+          "et0": 5.5577,
+          "rain": 1.5538,
+          "tmax": 34.7154,
+          "tmin": 25.9615
+        },
+        {
+          "date": "2016-07-22",
+          "et0": 5.3923,
+          "rain": 1.5077,
+          "tmax": 34.8923,
+          "tmin": 25.7077
+        },
+        {
+          "date": "2016-07-23",
+          "et0": 5.8031,
+          "rain": 0.5077,
+          "tmax": 35.5231,
+          "tmin": 26.0154
+        },
+        {
+          "date": "2016-07-24",
+          "et0": 5.6623,
+          "rain": 1.3,
+          "tmax": 35.4538,
+          "tmin": 26.0
+        },
+        {
+          "date": "2016-07-25",
+          "et0": 5.6846,
+          "rain": 2.3077,
+          "tmax": 35.8385,
+          "tmin": 25.9231
+        },
+        {
+          "date": "2016-07-26",
+          "et0": 5.6315,
+          "rain": 3.7308,
+          "tmax": 35.5615,
+          "tmin": 26.2615
+        },
+        {
+          "date": "2016-07-27",
+          "et0": 5.6038,
+          "rain": 2.0538,
+          "tmax": 35.4692,
+          "tmin": 25.9231
+        },
+        {
+          "date": "2016-07-28",
+          "et0": 5.55,
+          "rain": 1.6923,
+          "tmax": 35.3846,
+          "tmin": 26.0692
+        },
+        {
+          "date": "2016-07-29",
+          "et0": 5.5438,
+          "rain": 1.3231,
+          "tmax": 35.3462,
+          "tmin": 26.1154
+        },
+        {
+          "date": "2016-07-30",
+          "et0": 5.4531,
+          "rain": 2.1385,
+          "tmax": 35.0615,
+          "tmin": 25.7154
+        },
+        {
+          "date": "2016-07-31",
+          "et0": 5.6623,
+          "rain": 2.7,
+          "tmax": 35.3615,
+          "tmin": 26.0308
+        },
+        {
+          "date": "2016-08-01",
+          "et0": 5.9054,
+          "rain": 1.7692,
+          "tmax": 35.6923,
+          "tmin": 25.8308
+        },
+        {
+          "date": "2016-08-02",
+          "et0": 5.73,
+          "rain": 1.5923,
+          "tmax": 35.1615,
+          "tmin": 25.8538
+        },
+        {
+          "date": "2016-08-03",
+          "et0": 5.9538,
+          "rain": 1.4769,
+          "tmax": 35.5923,
+          "tmin": 26.1615
+        },
+        {
+          "date": "2016-08-04",
+          "et0": 6.0446,
+          "rain": 0.6538,
+          "tmax": 35.4154,
+          "tmin": 26.1615
+        },
+        {
+          "date": "2016-08-05",
+          "et0": 6.1908,
+          "rain": 0.8077,
+          "tmax": 35.9769,
+          "tmin": 26.1615
+        },
+        {
+          "date": "2016-08-06",
+          "et0": 6.0785,
+          "rain": 1.4692,
+          "tmax": 35.9231,
+          "tmin": 25.8
+        },
+        {
+          "date": "2016-08-07",
+          "et0": 6.1062,
+          "rain": 0.6615,
+          "tmax": 36.0846,
+          "tmin": 26.2385
+        },
+        {
+          "date": "2016-08-08",
+          "et0": 5.9838,
+          "rain": 2.7769,
+          "tmax": 36.1538,
+          "tmin": 26.1
+        },
+        {
+          "date": "2016-08-09",
+          "et0": 5.0046,
+          "rain": 4.9923,
+          "tmax": 34.3385,
+          "tmin": 25.8923
+        },
+        {
+          "date": "2016-08-10",
+          "et0": 4.7977,
+          "rain": 4.4231,
+          "tmax": 34.3769,
+          "tmin": 25.6615
+        },
+        {
+          "date": "2016-08-11",
+          "et0": 5.5631,
+          "rain": 2.3923,
+          "tmax": 35.4769,
+          "tmin": 25.7231
+        },
+        {
+          "date": "2016-08-12",
+          "et0": 5.0085,
+          "rain": 3.2923,
+          "tmax": 34.8308,
+          "tmin": 25.7385
+        },
+        {
+          "date": "2016-08-13",
+          "et0": 5.3769,
+          "rain": 2.2923,
+          "tmax": 35.0692,
+          "tmin": 25.8846
+        },
+        {
+          "date": "2016-08-14",
+          "et0": 5.1762,
+          "rain": 5.3692,
+          "tmax": 34.9769,
+          "tmin": 25.6692
+        },
+        {
+          "date": "2016-08-15",
+          "et0": 4.5623,
+          "rain": 5.6692,
+          "tmax": 34.0769,
+          "tmin": 25.4923
+        },
+        {
+          "date": "2016-08-16",
+          "et0": 4.7115,
+          "rain": 5.6462,
+          "tmax": 34.1231,
+          "tmin": 25.4923
+        },
+        {
+          "date": "2016-08-17",
+          "et0": 4.4985,
+          "rain": 6.0,
+          "tmax": 33.4,
+          "tmin": 25.3231
+        },
+        {
+          "date": "2016-08-18",
+          "et0": 4.6915,
+          "rain": 4.4308,
+          "tmax": 33.4,
+          "tmin": 25.1231
+        },
+        {
+          "date": "2016-08-19",
+          "et0": 5.1731,
+          "rain": 1.8462,
+          "tmax": 34.1923,
+          "tmin": 25.3769
+        },
+        {
+          "date": "2016-08-20",
+          "et0": 5.3154,
+          "rain": 4.2231,
+          "tmax": 34.6846,
+          "tmin": 25.5538
+        },
+        {
+          "date": "2016-08-21",
+          "et0": 4.99,
+          "rain": 3.1462,
+          "tmax": 33.9615,
+          "tmin": 25.4538
+        },
+        {
+          "date": "2016-08-22",
+          "et0": 4.7438,
+          "rain": 4.7538,
+          "tmax": 33.5385,
+          "tmin": 25.3923
+        },
+        {
+          "date": "2016-08-23",
+          "et0": 4.9908,
+          "rain": 2.3615,
+          "tmax": 34.3154,
+          "tmin": 25.4538
+        }
+      ],
+      "season": "Kharif",
+      "valid_pixel_pct": 92.0,
+      "vegetation_deviation": -0.018192342619993473,
+      "weather_category": 3
+    },
+    "interval_lower": 1.6372240815721941,
+    "interval_upper": 7.856055727638731,
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "provenance": [
+      {
+        "acquired_at": "2026-10-14T13:06:35+00:00",
+        "category": 0,
+        "category_label": "live",
+        "cloud_pct": null,
+        "data_age_hours": 0.0,
+        "forecast_horizon_days": null,
+        "lat": null,
+        "lon": null,
+        "missing_treatment": "none",
+        "radius_m": 1440.0,
+        "response_digest": "a161a4569f8d5098ef84b4933fb65bb96ff6d02c0040057e1b6fc2a1f35c1eba",
+        "source_id": "vegetation",
+        "valid_pixel_pct": 92.0,
+        "version": "sentinel-2-l2a-like"
+      },
+      {
+        "acquired_at": "2026-10-14T13:06:35+00:00",
+        "category": 3,
+        "category_label": "historical_fallback",
+        "cloud_pct": null,
+        "data_age_hours": 1656.0,
+        "forecast_horizon_days": 7,
+        "lat": null,
+        "lon": null,
+        "missing_treatment": "climatology substituted for unobserved days",
+        "radius_m": null,
+        "response_digest": "dde77045499c8fdbfdcc72c3448a3b29239b74d7e1ca9cca0d113cc0d726a19e",
+        "source_id": "weather",
+        "valid_pixel_pct": null,
+        "version": "open-meteo-compatible"
+      }
+    ],
+    "provenance_digest": "609aa86f21cee0c64c041bf170d1b5f6735e6437e8892de1f28d0ad2a333242d",
+    "thermal_time": {
+      "base_temp_c": 10.0,
+      "covered_days": 87.8516,
+      "current_gdd": 1828.9115,
+      "expectation": {
+        "avg_temp_max": 34.148,
+        "base_temp_c": 10.0,
+        "coverage_fraction": 1.0,
+        "heat_days": 43.615,
+        "n_analogues": 35,
+        "target_gdd": 1828.912,
+        "total_et0_mm": 510.89,
+        "total_rainfall_mm": 217.36
+      },
+      "forecast_days": 7,
+      "observed_days": 84
+    },
+    "total_correction": 0.1900217877016244,
+    "vegetation": {
+      "deviation": -0.018192342619993473,
+      "quality_band": "high",
+      "stability": {
+        "converged": true,
+        "convergence_radius_m": 720,
+        "n_samples": 5,
+        "ndvi_by_radius": [
+          0.7353,
+          0.7374,
+          0.7149,
+          0.7119,
+          0.7072
+        ],
+        "normalised_residual": 0.0961,
+        "radii_m": [
+          90,
+          180,
+          360,
+          720,
+          1440
+        ],
+        "residual_rms": 0.00481,
+        "spatial_trust": 0.9039,
+        "trend_r2": 0.8522,
+        "trend_slope": -0.011777
+      }
+    }
+  },
+  "regime": "climatology_fallback",
+  "replay": {
+    "engine_version": "1.0.0",
+    "mismatches": [],
+    "replayed_output_digest": "bbc4ca40e37aedec109b307bc7c46daebb46cf5f456627428bcb55d7f5ebdc1b",
+    "reproduced": true,
+    "stored_output_digest": "bbc4ca40e37aedec109b307bc7c46daebb46cf5f456627428bcb55d7f5ebdc1b"
+  },
+  "result": {
+    "anomaly_vector": {
+      "et0_pct": -4.7448,
+      "heat_days": 23.3854,
+      "rainfall_pct": -9.0961,
+      "temp_max_c": 2.6694
+    },
+    "base_prediction_t_per_ha": 3.9887,
+    "calibration_selection": {
+      "alpha": 0.1,
+      "backoff_depth": 1,
+      "backoff_path": [
+        "Whistorical_fallback|Vhigh|Cconflict:6",
+        "Whistorical_fallback|Vhigh|C*:20"
+      ],
+      "guarantee_level": "heuristic_inflated_pooled",
+      "inflation_applied": 1.35,
+      "is_calibrated": false,
+      "n_residuals": 20,
+      "partition_label": "Whistorical_fallback|Vhigh|C*",
+      "quantile": 3.1094158230332685
+    },
+    "conflict": {
+      "bucket": "conflict",
+      "code": "WEATHER_STRESS_NDVI_NORMAL",
+      "detail": "weather record indicates water or heat stress but the vegetation index is at or above its thermal-time expectation",
+      "vegetation_flag": "normal",
+      "weather_flag": "stress"
+    },
+    "corrected_prediction_t_per_ha": 4.7466,
+    "correction": {
+      "bounds_pct": [
+        -100.0,
+        94.7108
+      ],
+      "components_pct": {
+        "et0_pct": 11.3518,
+        "heat_days": 14.07182,
+        "rainfall_pct": 1.92491,
+        "temp_max_c": -8.34636
+      },
+      "raw_total_pct": 19.0022,
+      "total_pct": 19.0022,
+      "was_bounded": false
+    },
+    "inference_id": "Rice|Kharif|2016|4333631712",
+    "interval": {
+      "guarantee_level": "heuristic_inflated_pooled",
+      "half_width": 3.1094,
+      "interpretation": "Half-width is the split-conformal quantile of the matching provenance partition when the partition met the size floor; otherwise it is a pooled quantile widened by a stated inflation factor, which carries no finite-sample coverage guarantee.",
+      "is_calibrated": false,
+      "lower_bound": 1.6372,
+      "upper_bound": 7.8561
+    },
+    "label": "Provenance-calibrated estimate",
+    "notes": [
+      "Weather came from long-run climatology, not from observation; anomalies computed against it are not independent evidence of field conditions.",
+      "Cross-source disagreement (WEATHER_STRESS_NDVI_NORMAL); the point estimate is left unchanged and the uncertainty treatment is selected from the conflict stratum.",
+      "No provenance partition met the minimum size for a finite-sample guarantee; the interval below is a pooled quantile widened by a stated factor and is not a recalibrated prediction interval."
+    ],
+    "output_digest": "d855f55cd9a428242ec6283804418eb619be869ec5e0c52bd089ae2634e5d3ed",
+    "overconfident_flag": false,
+    "quality_key": "Whistorical_fallback|Vhigh|Cconflict",
+    "thermal_time": {
+      "base_temp_c": 10.0,
+      "covered_days": 87.8516,
+      "current_gdd": 1828.9115,
+      "forecast_days": 7,
+      "historical_expectation": {
+        "avg_temp_max": 34.148,
+        "base_temp_c": 10.0,
+        "coverage_fraction": 1.0,
+        "heat_days": 43.615,
+        "n_analogues": 35,
+        "target_gdd": 1828.912,
+        "total_et0_mm": 510.89,
+        "total_rainfall_mm": 217.36
+      },
+      "observed_days": 84
+    },
+    "vegetation": {
+      "deviation": -0.01819,
+      "quality_band": "high",
+      "stability": {
+        "converged": true,
+        "convergence_radius_m": 720,
+        "n_samples": 5,
+        "ndvi_by_radius": [
+          0.7353,
+          0.7374,
+          0.7149,
+          0.7119,
+          0.7072
+        ],
+        "normalised_residual": 0.0961,
+        "radii_m": [
+          90,
+          180,
+          360,
+          720,
+          1440
+        ],
+        "residual_rms": 0.00481,
+        "spatial_trust": 0.9039,
+        "trend_r2": 0.8522,
+        "trend_slope": -0.011777
+      }
+    }
+  },
+  "season": "Rice|Kharif|2016",
+  "skill_curve": {
+    "1": 0.6561,
+    "10": 0.4789,
+    "14": 0.4759,
+    "16": 0.4595,
+    "21": 0.4307,
+    "3": 0.5444,
+    "5": 0.5136,
+    "7": 0.5011
+  },
+  "store_observations": 360
+}
